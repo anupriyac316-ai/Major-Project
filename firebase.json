@@ -1,0 +1,42 @@
+{
+  "functions": {
+    "source": "functions"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "college-app-275ae",
+          "appId": "1:23126690932:android:e19c0df044a045cb921521",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "college-app-275ae",
+          "configurations": {
+            "android": "1:23126690932:android:e19c0df044a045cb921521",
+            "ios": "1:23126690932:ios:89b3f63e1d4c7ad2921521",
+            "macos": "1:23126690932:ios:89b3f63e1d4c7ad2921521",
+            "web": "1:23126690932:web:671378b3fdcd6e2b921521",
+            "windows": "1:23126690932:web:c8aeb52845be0fe6921521"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+name: admin_panel
+description: "Flutter Web Admin Panel for CASC College Project"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.20.0
+  cloud_firestore: ^4.17.5
+  firebase_messaging: ^14.9.4
+  file_picker: ^8.0.7
+  firebase_storage: ^11.3.0
+  universal_html: ^2.0.8
+  http: ^1.2.0
+  confetti: ^0.7.0
+  flutter_animate: ^4.1.1  # Add this line
+  pdf: ^3.10.7
+  printing: ^5.12.0
+  path_provider: ^2.1.2
+  archive: ^3.4.9
+
+  fl_chart: ^0.66.0
+  excel: ^2.1.0
+
+  # Local notifications for mobile
+  flutter_local_notifications: ^19.5.0
+
+  intl: ^0.18.1
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # Icon & Splash generators
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo.jpeg
+    - assets/logo1.jpg
+
+# 🔹 APP ICON CONFIG (ANDROID + IOS + WEB)
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/logo.jpeg
+  adaptive_icon_background: "#FF5FA2"
+  adaptive_icon_foreground: assets/logo.jpeg
+  remove_alpha_ios: true
+  web:
+    generate: true
+    image_path: assets/logo.jpeg
+    background_color: "#FF5FA2"
+    theme_color: "#FF5FA2"
+
+# 🔹 SPLASH SCREEN CONFIG
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/logo1.jpg
+  android: true
+  ios: true
+  web: true
+  android_gravity: center
+  ios_content_mode: center
+  web_image_mode: center
