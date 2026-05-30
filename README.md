@@ -155,7 +155,3 @@ firebase deploy
 - **Academic Year:** 2024–25
 
 ---
-
-## 📄 License
-This project is developed for academic purposes.
-© 2025 College Management System Team. All rights reserved.
